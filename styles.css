@@ -1,0 +1,184 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+
+.right header {
+    font-weight: bold;
+
+}
+
+.header {
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+
+.ull {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+#ulist :not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+
+.ull li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 1rem;
+    display: block;
+
+}
+
+.main-section header {
+    font-size: 2rem;
+
+}
+
+.main-section p {
+    font-size: 1.9rem;
+    color: rgba(49, 45, 45, 0.822);
+    
+    padding: 1rem;
+}
+
+.main-section li {
+    font-size: 1.9rem;
+    color: rgba(49, 45, 45, 0.822);
+    padding: 1rem 1rem 1rem 4rem;
+}
+
+#a {
+
+    padding: 1rem;
+}
+
+#e {
+
+    padding: 0;
+}
+
+section {
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5em;
+
+}
+
+code {
+    display: flex;
+    background-color: #847e8a4b;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 480px) {
+
+    
+    #ulist {
+        overflow: scroll;
+        height: 110px;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 768px) {
+    /* .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: green;
+        grid-gap: 1rem;
+    }*/
+    /* .left {
+        background-color: rgb(226, 50, 19);
+    }
+    .right {
+        background-color: rgb(230, 216, 210);
+    } 
+    #ulist{ 
+    } */
+
+
+}
+
+@media (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        /* background-color: yellow; */
+
+    }
+
+    /* .left {
+        background-color: rgb(85, 82, 68);
+    }
+    .right {
+        background-color: rgb(154, 172, 154);
+        
+    } */
+    #ulist {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    #navbar {
+        position: fixed;
+        /* background-color: rgb(21, 11, 117); */
+        width: 20rem;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    #navbar {
+        position: fixed;
+        /* background-color: rgb(21, 11, 117); */
+        width: 26rem;
+    }
+
+    /* .left {
+        background-color: rgb(226, 188, 19);
+    }
+    .right {
+        background-color: rgb(9, 148, 9);
+        
+    } */
+
+}
+
+
+@media (min-width: 1920px) {
+
+    #navbar {
+        position: fixed;
+        /* background-color: rgb(21, 11, 117); */
+        width: 38rem;
+    }
+}
